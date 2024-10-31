@@ -36,22 +36,18 @@ Set up the Hugging Face API key
 
 ## Execution results
 
-<BlazoredVideo @ref="video" EventFired="OnEvent"
-               VideoEventOptions="options"
-               autoplay="autoplay" 
-               loop="loop" 
-               muted="muted">
-    <source src="assets/video.mp4" type="video/mp4" />
-</BlazoredVideo>
-
+![My Project Video](assets/video.mp4)
 
 ## Screenshot of execution results
 
 ![My Project Screenshot](assets/Screenshot1.png)
 
+
 ![My Project Screenshot](assets/Screenshot2.png)
 
+
 ![My Project Screenshot](assets/Screenshot3.png)
+
 
 ![My Project Screenshot](assets/Screenshot4.png)
 
