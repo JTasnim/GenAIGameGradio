@@ -20,7 +20,7 @@ Prerequisites
 - Gradio library
 
 Clone the repository
-git clone <repository-url>
+git clone <https://github.com/JTasnim/GenAIGameGradio.git>
 
 Set up the Hugging Face API key
 
