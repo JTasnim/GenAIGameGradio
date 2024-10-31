@@ -43,21 +43,22 @@ Set up the Hugging Face API key
 <h3>Video Example</h3>
 
 <BlazoredVideo @ref="video" EventFired="OnEvent"
-               VideoEventOptions="options"
-               autoplay="autoplay" 
-               loop="loop"
-               muted="muted">
+VideoEventOptions="options"
+autoplay="autoplay"
+loop="loop"
+muted="muted">
 
     <source src="assets/video.mp4" type="video/mp4" />
+
 </BlazoredVideo>
 
 @code {
-    private BlazoredVideo video;
-    private VideoEventOptions options = new VideoEventOptions
-    {
-        Autoplay = true,
-        Loop = true
-    };
+private BlazoredVideo video;
+private VideoEventOptions options = new VideoEventOptions
+{
+Autoplay = true,
+Loop = true
+};
 
     private void OnEvent(string eventName)
     {
@@ -71,19 +72,16 @@ Set up the Hugging Face API key
             await video.PlayAsync();
         }
     }
-}
 
+}
 
 ## Screenshot of execution results
 
 ![My Project Screenshot](assets/Screenshot1.png)
 
-
 ![My Project Screenshot](assets/Screenshot2.png)
 
-
 ![My Project Screenshot](assets/Screenshot3.png)
-
 
 ![My Project Screenshot](assets/Screenshot4.png)
 
