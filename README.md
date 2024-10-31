@@ -36,11 +36,11 @@ Set up the Hugging Face API key
 
 ## Execution results
 
-@page "/video"
+    @page "/video"
 
-@using Blazored.Video
+    @using Blazored.Video
 
-<h3>Video Example</h3>
+    <h3>Video Example</h3>
 
     <BlazoredVideo @ref="video" EventFired="OnEvent"
                 VideoEventOptions="options"
@@ -48,7 +48,7 @@ Set up the Hugging Face API key
                 loop="loop"
                 muted="muted">
 
-        <source src="assets/video.mp4" type="video/mp4" />
+        <source src="videos/elephants.mp4" type="video/mp4" />
     </BlazoredVideo>
 
     @code {
