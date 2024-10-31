@@ -34,46 +34,6 @@ Set up the Hugging Face API key
 - .env: Environment file for storing API keys securely.
 - README.md: Project documentation.
 
-## Execution results
-
-    @page "/video"
-
-    @using Blazored.Video
-
-    <h3>Video Example</h3>
-
-    <BlazoredVideo @ref="video" EventFired="OnEvent"
-                VideoEventOptions="options"
-                autoplay="autoplay" 
-                loop="loop"
-                muted="muted">
-
-        <source src="videos/elephants.mp4" type="video/mp4" />
-    </BlazoredVideo>
-
-    @code {
-        private BlazoredVideo video;
-        private VideoEventOptions options = new VideoEventOptions
-        {
-            Autoplay = true,
-            Loop = true
-        };
-
-        private void OnEvent(string eventName)
-        {
-            Console.WriteLine($"Event fired: {eventName}");
-        }
-
-        protected override async Task OnAfterRenderAsync(bool firstRender)
-        {
-            if (firstRender)
-            {
-                await video.PlayAsync();
-            }
-        }
-    }
-
-
 ## Screenshot of execution results
 
 ![My Project Screenshot](assets/Screenshot1.png)
