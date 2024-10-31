@@ -49,4 +49,4 @@ Set up the Hugging Face API key
 
 # To learn more
 
-[Google Slide](./assets/StoryFromImage.pptx)
+[Google Slide](/assets/StoryFromImage.pptx)
