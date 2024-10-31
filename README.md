@@ -42,46 +42,48 @@ Set up the Hugging Face API key
 
 <h3>Video Example</h3>
 
-<BlazoredVideo @ref="video" EventFired="OnEvent"
-VideoEventOptions="options"
-autoplay="autoplay"
-loop="loop"
-muted="muted">
+    <BlazoredVideo @ref="video" EventFired="OnEvent"
+                VideoEventOptions="options"
+                autoplay="autoplay" 
+                loop="loop"
+                muted="muted">
 
-    <source src="assets/video.mp4" type="video/mp4" />
+        <source src="assets/video.mp4" type="video/mp4" />
+    </BlazoredVideo>
 
-</BlazoredVideo>
-
-@code {
-private BlazoredVideo video;
-private VideoEventOptions options = new VideoEventOptions
-{
-Autoplay = true,
-Loop = true
-};
-
-    private void OnEvent(string eventName)
-    {
-        Console.WriteLine($"Event fired: {eventName}");
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
+    @code {
+        private BlazoredVideo video;
+        private VideoEventOptions options = new VideoEventOptions
         {
-            await video.PlayAsync();
+            Autoplay = true,
+            Loop = true
+        };
+
+        private void OnEvent(string eventName)
+        {
+            Console.WriteLine($"Event fired: {eventName}");
+        }
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                await video.PlayAsync();
+            }
         }
     }
 
-}
 
 ## Screenshot of execution results
 
 ![My Project Screenshot](assets/Screenshot1.png)
 
+
 ![My Project Screenshot](assets/Screenshot2.png)
 
+
 ![My Project Screenshot](assets/Screenshot3.png)
+
 
 ![My Project Screenshot](assets/Screenshot4.png)
 
